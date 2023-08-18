@@ -15,7 +15,7 @@ PLAYER_2_SCORE_DISTANCE_FROM_CENTER = 50
 screen = Screen()
 screen.setup(width=800, height=600)
 screen.bgcolor('black')
-
+screen.title('Pong!')
 # Line init
 dotted_line = DottedLine()
 dotted_line.create_line()
