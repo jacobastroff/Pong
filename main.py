@@ -17,6 +17,8 @@ screen.setup(width=800, height=600)
 screen.bgcolor('black')
 screen.title('Pong!')
 # Line init
+screen.tracer(0)
+
 dotted_line = DottedLine()
 dotted_line.create_line()
 
@@ -39,6 +41,9 @@ def game():
     player_2_score.refresh_score(PLAYER_2_SCORE_DISTANCE_FROM_CENTER, 'left')
     paddle_right.paddle_init(PADDLE_RIGHT_INIT_POS_X)
     paddle_left.paddle_init(PADDLE_LEFT_INIT_POS_X)
+    screen.update()
+    screen.tracer(1)
+
     new_round()
 
 
