@@ -16,7 +16,7 @@ class DottedLine(Turtle):
             self.forward(10)
             self.penup()
             self.forward(10)
-        self.showturtle()
+        # self.showturtle()
         # OR
         # self.pendown()
         # self.goto(0, 310)
